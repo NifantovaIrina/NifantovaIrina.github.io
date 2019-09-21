@@ -2,36 +2,16 @@
 <html>
     <head>
         <script src="./file_js/main.js"> </script>
-        <title> LKSH Adygeya </title>
+        <title> НевНиф </title>
         <link rel="stylesheet" type="text/css" href="./file_css/main_css.css">
         <meta charset="utf-8">
     </head>
    
     <body class = "body">
-        <div class = "titel text_titel shadow">
-            <h1> Выбери контест: </h1>
-        </div>
-        <div class = "content padding-big margin">
-            <form action="./contest/gardeners.html">
-                <button class="contest buttion shadow" id="buttion1"
-                        onmouseover="mouseOver('buttion1')"
-                        onmouseout="mouseOut('buttion1')">
-                    <b>ЛКШ-2018 - Время Великого Посева</b>
-                </button>
-            </form>
-            <form action="./contest/war.html">
-                <button class = "contest buttion shadow" id="buttion2"
-                        onmouseover="mouseOver('buttion2')"
-                        onmouseout="mouseOut('buttion2')">
-                    <b>ЛКШ-2017 - Дикий запад</b>
-                </button>
-            </form>
-        </div>
-		<div class="Dimka">
-			По всем вопросам обращайся к преподавателю, или напрямую к 
-            <a href="https://vk.com/nd90000000013">Дмитрию</a>,
-            <a href="https://vk.com/dimka_113_reserv">Димке!</a> или
-            <a href="https://vk.com/dimka_113">Диме:)</a>
-		</div>
+        <input class="range" type="range" value="1" 
+					min="1" max="500" 
+                    step="1" oninput="updateImage()" id="image">
+                    
+        <img src="/image/0.jpg">
     </body>
 </html>
